@@ -1,13 +1,159 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-group__file,
+.input-group__file::-webkit-file-upload-button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.input-group__file {
+  @apply rounded bg-background p-3
+}
+
+.input-group__file::-webkit-file-upload-button {
+  @apply bg-lightblue border-none text-white mr-3 px-3 py-1 font-medium rounded cursor-pointer
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  transform: scale(0.8) !important;
+  width: 50px !important;
+  opacity: 0.75;
+  transition: opacity 200ms ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  left: 0px !important;
+}
+
+.swiper-button-next {
+  right: 0px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.animated-bg {
+  background-image: linear-gradient(
+    to right,
+    #f3f4f6 0%,
+    #ebedf1 10%,
+    #f3f4f6 20%,
+    #f3f4f6 100%
+  );
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.range-input input {
+  position: absolute;
+  top: -4px;
+  height: 4px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 2px solid #00aeff;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-slider-thumb {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: #fff;
+  border: 2px solid #00aeff;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.map-container {
+  width: 100%;
+}
+
+.breadcrumb {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+.agent-details {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.home .swiper-pagination-bullet {
+  height: 12px !important;
+  width: 12px !important;
+  background: transparent !important;
+  border: 2px solid #fff !important;
+  opacity: 1 !important;
+}
+
+.home .swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+.header .swiper-wrapper {
+    transition-duration: 500ms !important;
+}
+
+@media(max-width: 639px) {
+  .home .swiper-pagination-bullet,
+  .home .swiper-pagination-bullet-active {
+    display: none;
+  }
 }
