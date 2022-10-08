@@ -358,7 +358,7 @@ function ListingPage() {
             </div>
           </div>
           {/* Agent Details - Above 1024px */}
-          <div className="w-[30%]">
+          <div className="w-[30%] hidden lg:block">
             <div className=" bg-white p-8 self-start hidden lg:block ml-8 rounded sticky
             top-4">
               <div className="flex gap-x-4 mb-4">
