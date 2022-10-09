@@ -53,9 +53,10 @@ function ListingThumbnail({ listing, edit, listings, setListings }) {
   return (
     <div className="flex flex-col rounded overflow-hidden shadow-md hover:shadow-lg duration-200 ease">
       <div 
-        className="group relative flex aspect-[4/3] overflow-hidden cursor-pointer"
+        className="group relative flex aspect-[4/3] overflow-hidden cursor-pointer w-full
+        bg-red-400"
       >
-        <Swiper
+        {/* <Swiper
           modules={[Navigation]}
           slidesPerView={1}
           navigation
@@ -73,7 +74,7 @@ function ListingThumbnail({ listing, edit, listings, setListings }) {
               </SwiperSlide>
             ))
           }
-        </Swiper>
+        </Swiper> */}
         {
           listing.status === 'rent' ? (
             <div className="absolute z-10 top-4 right-4 px-[5px] py-[3px] bg-black/60 text-white uppercase text-[10px] rounded-sm">
