@@ -10,29 +10,33 @@ function SidebarOne({ open, setOpen }) {
         ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         onClick={() => setOpen(false)}
       ></div>
-      <div className={`fixed left-0 inset-y-0 bg-white text-black z-30 w-60
-      ${open ? 'block' : 'hidden'}`}>
-        <div className="flex flex-col text-sm uppercase font-medium divide-y border-y">
-          <div
-            onClick={() => {
-              navigate('/category/sale')
-              setOpen(false);
-            }}
-            className="px-6 py-5 cursor-pointer"
-          >
-            For sale
+      {
+        open && (
+          <div className="fixed left-0 inset-y-0 bg-white text-black z-30 w-60">
+            <div className="flex flex-col text-sm uppercase font-medium divide-y border-y">
+              <div
+                onClick={() => {
+                  navigate('/category/sale')
+                  setOpen(false);
+                }}
+                className="px-6 py-5 cursor-pointer"
+              >
+                For sale
+              </div>
+              <div
+                onClick={() => {
+                  navigate('/category/rent')
+                  setOpen(false);
+                }}
+                className="px-6 py-5 cursor-pointer"
+              >
+                For rent
+              </div>
+            </div>
           </div>
-          <div
-            onClick={() => {
-              navigate('/category/rent')
-              setOpen(false);
-            }}
-            className="px-6 py-5 cursor-pointer"
-          >
-            For rent
-          </div>
-        </div>
-      </div>
+        )
+      }
+
 
     </div>
   )
