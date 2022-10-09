@@ -41,14 +41,13 @@ function ListingSlide({ listing }) {
           backgroundImage: `url(${listing.propertyImgs[0]})`
         }}
       >
-        <div className="absolute inset-0 backdrop-blur-sm"></div>
         <div 
-          className="absolute inset-0 bg-black/70 flex pb-[8%] lg:pb-0"
+          className="absolute inset-0 bg-black/70 flex pb-[8%] lg:pb-0 backdrop-blur-sm"
           data-aos="fade-in"
           data-aos-delay="500"
           data-aos-duration="1000"
         >
-          <div className="container mx-auto max-w-6xl px-4 md:px-6 flex flex-col  justify-center sm:justify-end lg:justify-center text-white">
+          <div className="container mx-auto max-w-6xl px-4 md:px-6 flex flex-col  justify-center sm:justify-end lg:justify-center text-white z-10">
             <div className="overflow-hidden">
               <div 
                 className="text-xs sm:text-sm lg:text-base font-light"
@@ -116,11 +115,10 @@ function ListingSlide({ listing }) {
         backgroundImage: `url(${listing.propertyImgs[0]})`
       }}
     >
-      <div className="absolute inset-0 backdrop-blur-sm"></div>
       <div 
-        className="absolute inset-0 bg-black/70 flex pb-[8%] lg:pb-0"
+        className="absolute inset-0 bg-black/70 flex pb-[8%] lg:pb-0 backdrop-blur-sm"
       >
-        <div className="container mx-auto max-w-6xl px-4 md:px-6 flex flex-col  justify-center text-white">
+        <div className="container mx-auto max-w-6xl px-4 md:px-6 flex flex-col  justify-center text-white z-10">
           <div className="overflow-hidden">
             <div 
               className="text-xs sm:text-sm lg:text-base font-light"
