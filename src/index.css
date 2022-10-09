@@ -117,7 +117,7 @@ input[type="range"]:hover::-webkit-slider-thumb {
   transform: scale(1.1);
 }
 
-input[type="range"]::-moz-slider-thumb {
+input[type="range"]::-moz-range-thumb {
   height: 24px;
   width: 24px;
   border-radius: 50%;
