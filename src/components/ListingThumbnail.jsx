@@ -53,7 +53,7 @@ function ListingThumbnail({ listing, edit, listings, setListings }) {
   return (
     <div className="flex flex-col rounded overflow-hidden shadow-md hover:shadow-lg duration-200 ease">
       <div 
-        className="group relative flex pt-3/4 overflow-hidden cursor-pointer w-full"
+        className="group relative flex pt-[75%] overflow-hidden cursor-pointer w-full"
       >
         <Swiper
           modules={[Navigation]}
