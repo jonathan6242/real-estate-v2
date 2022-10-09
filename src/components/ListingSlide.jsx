@@ -17,7 +17,7 @@ function ListingSlide({ listing }) {
         if(window.innerWidth >= 640) {
           parallaxRef.current.style.backgroundPositionY = `calc(50% + ${offset * 0.75}px)`
         } else {
-          parallaxRef.current.style.backgroundPositionY = `calc(50% + ${offset * 0.25}px)`
+          parallaxRef.current.style.backgroundPositionY = `calc(50% + ${offset * 0.2}px)`
         }
         
     }
