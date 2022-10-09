@@ -16,7 +16,7 @@ function SidebarTwo({ open, setOpen }) {
         ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         onClick={() => setOpen(false)}
       ></div>
-      <div className={`fixed right-0 inset-y-0 bg-white text-black z-30 duration-200 ease w-60
+      <div className={`fixed right-0 inset-y-0 bg-white text-black z-30 duration-500 ease w-60
       ${open ? 'translate-x-0' : 'translate-x-[200%]'}`}>
         <div className="flex flex-col text-sm uppercase font-medium divide-y border-y">
           {
@@ -26,7 +26,7 @@ function SidebarTwo({ open, setOpen }) {
                   className="p-2"
                 >
                   <button 
-                    className="px-6 py-3 bg-lightblue rounded cursor-pointer hover:bg-opacity-75 duration-200 ease uppercase text-white w-full"
+                    className="px-6 py-3 bg-lightblue rounded cursor-pointer hover:bg-opacity-75 duration-500 ease uppercase text-white w-full"
                     onClick={() => {
                       setOpen(false);
                       navigate('/createlisting')
