@@ -26,7 +26,7 @@ function SidebarTwo({ open, setOpen }) {
                   className="p-2"
                 >
                   <button 
-                    className="px-6 py-3 bg-lightblue rounded cursor-pointer hover:bg-opacity-75 duration-500 ease uppercase text-white w-full"
+                    className="px-6 py-3 bg-lightblue rounded cursor-pointer hover:bg-opacity-75 duration-200 ease uppercase text-white w-full"
                     onClick={() => {
                       setOpen(false);
                       navigate('/createlisting')
