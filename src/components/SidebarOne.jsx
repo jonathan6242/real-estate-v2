@@ -11,7 +11,7 @@ function SidebarOne({ open, setOpen }) {
         onClick={() => setOpen(false)}
       ></div>
       <div className={`fixed left-0 inset-y-0 bg-white text-black z-30 duration-500 ease w-60
-      ${open ? 'block' : 'hidden'}`}>
+      ${open ? 'visible translate-x-0' : 'invisible -translate-x-[200%]'}`}>
         <div className="flex flex-col text-sm uppercase font-medium divide-y border-y">
           <div
             onClick={() => {
