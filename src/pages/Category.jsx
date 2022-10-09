@@ -404,7 +404,6 @@ function Category() {
             </form>
           </div>
         </div>
-
         {/* Top Header */}
         <div className="flex flex-col-reverse items-start gap-y-2 mb-4 
         sm:flex-row sm:items-center sm:justify-between sm:h-10 sm:mb-2">
@@ -474,7 +473,7 @@ function Category() {
           }
         </div>
         {/* Listings Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {
             listings ? (
               listings

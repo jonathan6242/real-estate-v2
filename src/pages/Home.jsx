@@ -8,6 +8,8 @@ import PropertyType from "../components/PropertyType"
 import { Autoplay, Pagination } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react";
 import ListingSlide from "../components/ListingSlide"
+import Aos from "aos"
+import 'aos/dist/aos.css';
 
 function Home() {
   const [listings, setListings] = useState(null);
@@ -33,6 +35,7 @@ function Home() {
       );
       setFeaturedListings(data.docs.map(doc => ({...doc.data(), id: doc.id})))
     }
+    Aos.init()
     getListings();
     getFeaturedListings();
   }, [])
@@ -46,6 +49,9 @@ function Home() {
         {
           featuredListings ? (
             <Swiper
+              data-aos="fade-in"
+              data-aos-delay="500"
+              data-aos-duration="1000"
               modules={[Autoplay, Pagination]}
               slidesPerView={1}
               pagination={{
@@ -53,7 +59,7 @@ function Home() {
               }}
               loop={true}
               autoplay={{
-                delay: 6000,
+                delay: 10000,
                 disableOnInteraction: true,
               }}
             >
@@ -66,7 +72,7 @@ function Home() {
               }
             </Swiper>
           ) : (
-            <div className="relative w-full aspect-[5/4] sm:aspect-[2/1] max-h-[540px] overflow-hidden animated-bg"></div>
+            <div className="relative w-full aspect-square sm:aspect-[7/4] max-h-[540px] overflow-hidden animated-bg"></div>
           )
         }
       </div>
