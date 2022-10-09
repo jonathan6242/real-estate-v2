@@ -233,8 +233,8 @@ function Category() {
             }
             <form
               onSubmit={onSubmit} 
-              className={`fixed inset-x-0 top-24 bottom-0 sm:inset-x-auto sm:absolute sm:top-8 sm:bottom-auto sm:right-0 sm:w-[360px] bg-white border px-3 py-5 sm:p-5 border-lightgray flex-col z-20 rounded overflow-hidden 
-              ${filtersOpen ? 'translate-y-0 sm:flex' : 'translate-y-full sm:hidden'} duration-300 ease text-sm sm:text-base`}
+              className={`fixed inset-x-0 top-0 sm:inset-x-auto sm:absolute sm:top-8 sm:bottom-auto sm:right-0 sm:w-[360px] bg-white border px-3 py-5 sm:p-5 border-lightgray flex-col z-20 rounded overflow-hidden 
+              ${filtersOpen ? 'translate-y-0 sm:flex' : '-translate-y-full sm:hidden'} duration-300 ease text-sm sm:text-base`}
             >
               <div className="flex justify-between mb-4">
                 <div className="font-medium">Filters</div>
