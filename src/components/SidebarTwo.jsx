@@ -17,7 +17,7 @@ function SidebarTwo({ open, setOpen }) {
         onClick={() => setOpen(false)}
       ></div>
       <div className={`fixed right-0 inset-y-0 bg-white text-black z-30 transition-transform duration-500 ease w-60
-      ${open ? 'visible translate-x-0' : 'invisible translate-x-[200%]'}`}>
+      ${open ? 'block translate-x-0' : 'hidden translate-x-[200%]'}`}>
         <div className="flex flex-col text-sm uppercase font-medium divide-y border-y">
           {
             user ? (
