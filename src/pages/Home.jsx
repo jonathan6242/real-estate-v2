@@ -122,22 +122,22 @@ function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <PropertyType 
               name="Apartment"
-              url="https://432351-1355221-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/205.jpg"
+              url="https://i2.au.reastatic.net/800x600-format=webp/f00366bedd8c71753880189ca27b390c8a45aa46902d9024e8ee2f2f3f8c94fe/image.jpg"
               number={12}
             />
             <PropertyType 
               name="House"
-              url="https://432351-1355221-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/026.jpg"
+              url="https://i2.au.reastatic.net/800x600-format=webp/500a35aa94920e4b02c0cb8864b925a50c53576ae12d788aac2a206aa14e1559/image.jpg"
               number={12}
             />
             <PropertyType 
               name="Villa"
-              url="https://432351-1355221-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/03/020.jpg"
+              url="https://i2.au.reastatic.net/800x600-format=webp/278a85ee3daaa136846c9ecf361dd40b148e66f19787a9d0d630d2b8f1b5a888/image.jpg"
               number={4}
             />
             <PropertyType 
               name="Rural"
-              url="https://432351-1355221-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2016/02/056.jpg"
+              url="https://i2.au.reastatic.net/800x600-format=webp/492ac42ed08f6aa940593b69f3f38b313adf7f8c328c904e72f96c06ab00abb0/image.jpg"
               number={4}
             />
 
