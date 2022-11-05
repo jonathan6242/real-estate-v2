@@ -15,6 +15,7 @@ https://real-estate-v2.vercel.app/
 * Pagination
 * Saving listings to favourites
 * Listing pages with Google Maps integration
+* Profile pages
 
 ## Stack
 * React
