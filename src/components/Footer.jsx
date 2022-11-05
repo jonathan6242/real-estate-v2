@@ -129,7 +129,7 @@ function Footer() {
           </div>
           {/* Copyright */}
           <div className="text-center font-light text-sm">
-            &copy; Homez - All rights reserved
+            All elements in this website are for illustrative purposes only with no intention for commercial use.
           </div>
         </div>
       </footer>
