@@ -1,6 +1,6 @@
 # Homez
 
-![alt text](https://www.jonathanfwong.com/assets/homez1.PNG "Homez")
+![Homez](https://www.jonathanfwong.com/assets/homez1.PNG "Homez")
 
 ## About
 Homez is a mock real-estate website where users can post and view different properties.
