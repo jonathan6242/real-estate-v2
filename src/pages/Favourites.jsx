@@ -15,7 +15,7 @@ function Favourites() {
   const [totalPages, setTotalPages] = useState(0);
   const { user } = useAuthUser();
 
-  const listingsPerPage = 1;
+  const listingsPerPage = 6;
   const dropdownRef = useRef();
 
   useEffect(() => {
